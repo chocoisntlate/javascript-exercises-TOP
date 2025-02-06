@@ -1,4 +1,8 @@
-const getTheTitles = function() {
+const getTheTitles = function(bookDetails) {
+    return bookDetails.reduce((array, obj) => {
+      array.push(obj.title)
+        return array;
+    }, [])
 
 };
 
